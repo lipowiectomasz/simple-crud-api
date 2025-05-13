@@ -8,7 +8,8 @@
     "start:prod": "cross-env NODE_ENV=production node dist/bundle.js",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "start:multi": "ts-node src/cluster.ts"
   },
   "keywords": [],
   "author": "Tomasz Lipowiec",
