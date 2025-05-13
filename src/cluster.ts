@@ -9,7 +9,7 @@ const BASE_PORT = Number(process.env.PORT) || 4000;
 
 if (cluster.isPrimary) {
     console.log(`Master ${process.pid} is running`);
-    
+
     let current = 0;
 
     for (let i = 1; i < numCPUs; i++) {
